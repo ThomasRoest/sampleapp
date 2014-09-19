@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'static_pages#index'
 
+   match 'treehouse1', to: 'static_pages#treehouse1', via: 'get'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
